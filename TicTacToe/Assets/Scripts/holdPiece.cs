@@ -26,8 +26,8 @@ public class holdPiece : MonoBehaviour {
             holdingPiece = true;
         }
     }
-	// Update is called once per frame
-	void Update () {
+
+	void FixedUpdate () {
         if (GameLogic.GetComponent<GameLogic>().playerTurn == true) {
             if (holdingPiece == true) {
                 Vector3 forwardDir = raycastHolder.transform.TransformDirection(Vector3.forward) * 100;

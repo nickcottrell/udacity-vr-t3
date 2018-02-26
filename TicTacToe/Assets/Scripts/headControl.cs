@@ -13,7 +13,7 @@ public class headControl : MonoBehaviour {
 	}
 	
 	// Update is called once per frame
-	void Update () {
+	void FixedUpdate () {
         if(GameLogic.GetComponent<GameLogic>().playerTurn == true) {
             if (GameLogic.GetComponent<holdPiece>().holdingPiece == true) {
                 Vector3 dir = GameLogic.GetComponent<holdPiece>().pieceBeingHeld.transform.position - transform.position;
