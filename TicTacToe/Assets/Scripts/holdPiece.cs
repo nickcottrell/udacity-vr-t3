@@ -9,6 +9,8 @@ public class holdPiece : MonoBehaviour {
     public GameObject pieceBeingHeld;
 	public GameObject gravityAttractor;
 
+	private bool m_playerTurn;
+
     public bool holdingPiece = false;
     public float hoverHeight = 0.3f;
 
@@ -17,10 +19,12 @@ public class holdPiece : MonoBehaviour {
 	private Vector3 forceDirection;
 
     // Use this for initialization
-    void Start () {
-		
+    void Awake () {
+		//added these so that the GetComponents are only called once as opposed to every(ish) frame
+		m_playerTurn = GameLogic.GetComponent<GameLogic> ().playerTurn;
 	}
 	public void grabPiece(GameObject selectedPiece) {
+		// i left this GetComponent in because the 'selectedPiece' is an method arg
         if (selectedPiece.GetComponent<PlayerPiece>().hasBeenPlayed == false) {
             pieceBeingHeld = selectedPiece;
             holdingPiece = true;
@@ -28,7 +32,7 @@ public class holdPiece : MonoBehaviour {
     }
 
 	void FixedUpdate () {
-        if (GameLogic.GetComponent<GameLogic>().playerTurn == true) {
+		if (m_playerTurn == true) {
             if (holdingPiece == true) {
                 Vector3 forwardDir = raycastHolder.transform.TransformDirection(Vector3.forward) * 100;
                 Debug.DrawRay(raycastHolder.transform.position, forwardDir, Color.green);
@@ -40,7 +44,6 @@ public class holdPiece : MonoBehaviour {
 
 					pieceBeingHeld.GetComponent<Rigidbody> ().useGravity = false;
 					pieceBeingHeld.GetComponent<BoxCollider> ().enabled = false;
-
 					pieceBeingHeld.GetComponent<Rigidbody>().AddForce(gravityAttractor.transform.position - pieceBeingHeld.transform.position);
 
 
