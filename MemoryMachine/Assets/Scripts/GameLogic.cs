@@ -20,7 +20,8 @@ public class GameLogic : MonoBehaviour {
 	private LineRenderer m_lineTwo;
 	private LineRenderer m_lineThree;
 	public Material m_lineMaterial;
-
+	public GameObject m_soundTeleport;
+	public GameObject m_particleTeleport;
 
 
 	void Start () {
@@ -30,21 +31,21 @@ public class GameLogic : MonoBehaviour {
 		m_lineOne = m_pointOne.gameObject.AddComponent<LineRenderer>();
 		m_lineOne.material = m_lineMaterial;
 		// Set the width of the Line Renderer
-		m_lineOne.SetWidth(0.01F, 0.01F);
+		m_lineOne.SetWidth(0.005F, 0.005F);
 		// Set the number of vertex fo the Line Renderer
 		m_lineOne.SetVertexCount(2);
 
 		m_lineTwo = m_pointTwo.gameObject.AddComponent<LineRenderer>();
 		m_lineTwo.material = m_lineMaterial;
 		// Set the width of the Line Renderer
-		m_lineTwo.SetWidth(0.01F, 0.01F);
+		m_lineTwo.SetWidth(0.005F, 0.005F);
 		// Set the number of vertex fo the Line Renderer
 		m_lineTwo.SetVertexCount(2);
 
 		m_lineThree = m_pointThree.gameObject.AddComponent<LineRenderer>();
 		m_lineThree.material = m_lineMaterial;
 		// Set the width of the Line Renderer
-		m_lineThree.SetWidth(0.01F, 0.01F);
+		m_lineThree.SetWidth(0.005F, 0.005F);
 		// Set the number of vertex fo the Line Renderer
 		m_lineThree.SetVertexCount(2);
 
@@ -64,8 +65,8 @@ public class GameLogic : MonoBehaviour {
 	}
 
 	public void GoToScene(string SceneName) {
-		Debug.Log ("My method was called.");
-		SceneManager.LoadScene (SceneName);
+
+		StartCoroutine(WaitAndLoad(SceneName));
 	}
 
 	void FaceCamera(GameObject labelName)
@@ -87,5 +88,16 @@ public class GameLogic : MonoBehaviour {
 		}
 	}
 
+
+	IEnumerator WaitAndLoad(string SceneName)
+	{
+		print(Time.time);
+		m_soundTeleport.SetActive (true);
+		m_particleTeleport.SetActive (true);
+		yield return new WaitForSeconds(2);
+		print(Time.time);
+		m_soundTeleport.SetActive (false);
+		SceneManager.LoadScene (SceneName);
+	}
 
 }

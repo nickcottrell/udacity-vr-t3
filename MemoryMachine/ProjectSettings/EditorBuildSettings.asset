@@ -6,20 +6,14 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/01-Booth-tourism.unity
-    guid: cf56aed08813e4238b375841576c5600
+    path: Assets/Scenes/00-memory-machine-lobby-02.unity
+    guid: 20af9cb1205fb466b971771596d9b8aa
   - enabled: 1
-    path: Assets/Scenes/02-Booth-medical.unity
-    guid: 38d9257bd97d843abb054b444086b6a8
+    path: Assets/Scenes/01-Booth-tourism.unity
+    guid: 0694448e696e34afaa03c188f6d3a672
   - enabled: 1
     path: Assets/Scenes/03-Booth-journalism.unity
     guid: d38c3afabb8b64c54964fa125954813c
   - enabled: 1
     path: Assets/Scenes/04-Booth-architecture.unity
-    guid: 74724af5194534dcc8426c69fc4863f6
-  - enabled: 1
-    path: Assets/Scenes/05-Booth-socialVR.unity
-    guid: b3a6cf9044f16406eaa5d507736cad8f
-  - enabled: 1
-    path: Assets/Scenes/00-memory-machine-lobby-02.unity
-    guid: 20af9cb1205fb466b971771596d9b8aa
+    guid: 285bc9420b9764c2fbf7dc2e6edfd8c2
