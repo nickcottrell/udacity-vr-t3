@@ -304,11 +304,11 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: ae56cec996840469ab416969753907c0, type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: ae56cec996840469ab416969753907c0, type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: ae56cec996840469ab416969753907c0, type: 3}
       propertyPath: m_LocalRotation.w
@@ -333,7 +333,23 @@ Prefab:
     - target: {fileID: 2300000, guid: ae56cec996840469ab416969753907c0, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: 1b9ba21c7dba7442bb74ff3466734455, type: 2}
+      objectReference: {fileID: 2100000, guid: 5a08927cb4afa424785dd10b0f1140e3, type: 2}
+    - target: {fileID: 2300000, guid: ae56cec996840469ab416969753907c0, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: ae56cec996840469ab416969753907c0, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: ae56cec996840469ab416969753907c0, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: ae56cec996840469ab416969753907c0, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: ae56cec996840469ab416969753907c0, type: 3}
   m_IsPrefabParent: 0
@@ -1201,6 +1217,42 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 970dd4b9371394fb4890965f608d46fd, type: 2}
   m_IsPrefabParent: 0
+--- !u!1 &1551366637 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 100000, guid: ae56cec996840469ab416969753907c0, type: 3}
+  m_PrefabInternal: {fileID: 206957901}
+--- !u!328 &1551366638
+VideoPlayer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1551366637}
+  m_Enabled: 1
+  m_VideoClip: {fileID: 32900000, guid: b6856a1b8998a41cbab51e0dc4fb67ca, type: 3}
+  m_TargetCameraAlpha: 1
+  m_TargetCamera: {fileID: 0}
+  m_TargetTexture: {fileID: 0}
+  m_TimeReference: 0
+  m_TargetMaterialRenderer: {fileID: 0}
+  m_TargetMaterialProperty: _MainTex
+  m_RenderMode: 3
+  m_AspectRatio: 2
+  m_DataSource: 1
+  m_PlaybackSpeed: 1
+  m_AudioOutputMode: 2
+  m_TargetAudioSources:
+  - {fileID: 0}
+  m_DirectAudioVolumes:
+  - 1
+  m_Url: https://github.com/nickcottrell/nickcottrell.github.com/raw/0450ea1a6c33216d1bc2cfaa2963f78a7f18ac65/video/test02.mp4
+  m_EnabledAudioTracks: 01
+  m_DirectAudioMutes: 00
+  m_ControlledAudioTrackCount: 1
+  m_PlayOnAwake: 1
+  m_SkipOnDrop: 1
+  m_Looping: 0
+  m_WaitForFirstFrame: 1
+  m_FrameReadyEventEnabled: 0
 --- !u!1 &1675582728
 GameObject:
   m_ObjectHideFlags: 0
