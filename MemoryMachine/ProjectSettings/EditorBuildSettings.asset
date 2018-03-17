@@ -6,14 +6,14 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/00-memory-machine-lobby-02.unity
+    path: Assets/Scenes/00-MemoryMachine.unity
     guid: 20af9cb1205fb466b971771596d9b8aa
   - enabled: 1
-    path: Assets/Scenes/01-Booth-tourism.unity
-    guid: 0694448e696e34afaa03c188f6d3a672
+    path: Assets/Scenes/01-VideoScene-01-Germany.unity
+    guid: 33343cb010fe645dcb44cf3d6b868177
   - enabled: 1
-    path: Assets/Scenes/03-Booth-journalism.unity
-    guid: d38c3afabb8b64c54964fa125954813c
+    path: Assets/Scenes/02-VideoScene-02-India.unity
+    guid: 649648cafdd864dc7b7dd3996efd55b0
   - enabled: 1
-    path: Assets/Scenes/04-Booth-architecture.unity
-    guid: 285bc9420b9764c2fbf7dc2e6edfd8c2
+    path: Assets/Scenes/03-VideoScene-03-Thailand.unity
+    guid: 19bd082e9b461453b9be76c6dae1ae01
