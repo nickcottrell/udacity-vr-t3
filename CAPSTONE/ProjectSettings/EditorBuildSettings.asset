@@ -1,0 +1,40 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1045 &1
+EditorBuildSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/000-intro.unity
+    guid: 057d0a68f64004de89c30a0c16e3038f
+  - enabled: 1
+    path: Assets/Scenes/00-main-table-loader.unity
+    guid: abfaad9f9e9a74f89b0a0106de1aba0a
+  - enabled: 1
+    path: Assets/Scenes/00-main-table.unity
+    guid: 19a9e39f085654876834c50335c7ae94
+  - enabled: 1
+    path: Assets/Scenes/01-level-island.unity
+    guid: 1ea96ee2d03b744af83fff52d627b493
+  - enabled: 1
+    path: Assets/Scenes/01-level-island-loader.unity
+    guid: bcbdbd6dab94a474ba5ba8bfc332cada
+  - enabled: 1
+    path: Assets/Scenes/02-level-fort-loader.unity
+    guid: 9dc379dcad960419481efb27ca229576
+  - enabled: 1
+    path: Assets/Scenes/02-level-fort.unity
+    guid: 44bb7c27a2e0342a8ab67349e4431a7e
+  - enabled: 1
+    path: Assets/Scenes/03-level-dungeon-loader.unity
+    guid: a86b395e9ad11428a9e98bcd7acf66ea
+  - enabled: 1
+    path: Assets/Scenes/03-level-dungeon.unity
+    guid: 91c541d12fac4425897fe0c1d6f2169a
+  - enabled: 1
+    path: Assets/Scenes/04-restarter.unity
+    guid: 42856ccf28c514a73af5ac26accced8d
+  - enabled: 1
+    path: Assets/Scenes/05-game-over.unity
+    guid: 19366105b7e274fa8bce12c6118423d2

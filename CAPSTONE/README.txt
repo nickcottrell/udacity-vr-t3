@@ -9,10 +9,19 @@ _________                        __
 This project is part of [Udacity](https://www.udacity.com "Udacity - Be in demand")'s [VR Developer Nanodegree](https://www.udacity.com/course/vr-developer-nanodegree--nd017).
 
 
-Versions:
+Unity Version:
 - Unity 2017.2.0f3
-- GVR Unity SDK v1.70.0
 
+Dependencies:
+- GVR Unity SDK v1.70.0
+- TextMeshPro
+- Google Resonnace Audio
+- Asset Store (see below):
+	- AwesomeDungeon
+	- Low Poly Fantasy Loot Basic
+	- Pirate Music Pack
+	- PolygonPirates
+	- Stonewall Studios
 
 
                                                                            
